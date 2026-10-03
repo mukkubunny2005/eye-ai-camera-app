@@ -1,0 +1,10 @@
+{
+  "name": "Secure AI Eye-Controlled Android Phone",
+  "description": "Production-grade hands-free Android eye-control system featuring on-device CameraX MediaPipe eye tracking, TFLite gaze inference, AccessibilityService system navigation, and security architecture.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

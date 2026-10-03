@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Secure Eye Control</string>
+    <string name="accessibility_service_description">Enables hands-free eye control for navigating the Android system via virtual gaze cursor, dwell clicks, and intentional blink gestures. Private and on-device.</string>
+    <string name="camera_permission_rationale">Camera permission is required to detect face and iris landmarks locally on your device for eye control. Video frames are never stored, logged, or transmitted.</string>
+</resources>

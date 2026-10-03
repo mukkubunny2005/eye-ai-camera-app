@@ -1,0 +1,116 @@
+{
+  "overall_accuracy": 0.9949,
+  "total_test_samples": 396,
+  "avg_inference_latency_ms": 0.298,
+  "confusion_matrix": [
+    [
+      65,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      66,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      66,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      65,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      66,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      66
+    ]
+  ],
+  "class_names": [
+    "NORMAL_BLINK",
+    "DELIBERATE_CLICK",
+    "GAZE_DWELL",
+    "DOUBLE_BLINK",
+    "EMERGENCY_PAUSE",
+    "SACCADE_REST"
+  ],
+  "class_metrics": {
+    "NORMAL_BLINK": {
+      "precision": 0.9848,
+      "recall": 0.9848,
+      "f1_score": 0.9848,
+      "true_positives": 65,
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    "DELIBERATE_CLICK": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 66,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "GAZE_DWELL": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 66,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "DOUBLE_BLINK": {
+      "precision": 0.9848,
+      "recall": 0.9848,
+      "f1_score": 0.9848,
+      "true_positives": 65,
+      "false_positives": 1,
+      "false_negatives": 1
+    },
+    "EMERGENCY_PAUSE": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 66,
+      "false_positives": 0,
+      "false_negatives": 0
+    },
+    "SACCADE_REST": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "true_positives": 66,
+      "false_positives": 0,
+      "false_negatives": 0
+    }
+  },
+  "accidental_click_rate": 0.0,
+  "safety_status": "PASSED",
+  "mobile_deployment_ready": true
+}

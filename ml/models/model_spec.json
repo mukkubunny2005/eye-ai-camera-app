@@ -1,0 +1,51 @@
+{
+  "model_name": "SecureEyeActionClassifier",
+  "version": "1.2.0-prod",
+  "framework": "TensorFlow Lite / ONNX Mobile compatible",
+  "inputs": [
+    {
+      "name": "temporal_eye_features",
+      "shape": [
+        1,
+        16
+      ],
+      "data_type": "FLOAT32",
+      "range": [
+        -10.0,
+        10.0
+      ],
+      "description": "Z-score normalized temporal eye features (EAR, iris deltas, head pose, velocities, dwell)"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "action_probabilities",
+      "shape": [
+        1,
+        6
+      ],
+      "data_type": "FLOAT32",
+      "classes": [
+        "NORMAL_BLINK",
+        "DELIBERATE_CLICK",
+        "GAZE_DWELL",
+        "DOUBLE_BLINK",
+        "EMERGENCY_PAUSE",
+        "SACCADE_REST"
+      ],
+      "description": "Softmax probabilities across action intents"
+    }
+  ],
+  "inference_budget": {
+    "max_latency_ms": 12.0,
+    "typical_latency_ms": 1.8,
+    "max_memory_kb": 256
+  },
+  "safety_thresholds": {
+    "min_confidence_click": 0.85,
+    "min_confidence_dwell": 0.8,
+    "emergency_pause_hold_ms": 800,
+    "deliberate_click_min_ms": 250,
+    "deliberate_click_max_ms": 550
+  }
+}
